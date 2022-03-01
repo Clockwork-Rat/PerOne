@@ -21,7 +21,7 @@ bool options_parser_crypt::parse(options *opts, char ***argv, int argc)
             "Input file name" 
             )
         ( "output_file,o", 
-            po::value<std::string>( &c_opts->outfile_fname)->required(),
+            po::value<std::string>( &c_opts->outfile_fname )->required(),
             "Output file name"
             )
         ( "key_file,k",
@@ -33,7 +33,7 @@ bool options_parser_crypt::parse(options *opts, char ***argv, int argc)
             "include if file is being encrypted, do not if file is being decrypted"
             );
 
-        po::store( po::command_line_parser( argc, *argv ).options( desc ).allow_unregistered().run(), vm);
+        po::store( po::command_line_parser( argc, *argv ).options( desc ).allow_unregistered().run(), vm );
 
         if( vm.count( "help" ) 
             || argc == 2

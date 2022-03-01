@@ -11,7 +11,9 @@ set(CMAKE_CXX_STANDARD 11)
 
 find_package(Boost REQUIRED COMPONENTS program_options regex filesystem iostreams)
 
-#include_directories()
+include_directories(include/core)
+include_directories(include/crypt)
+include_directories(include/keygen)
 
 if(NOT CMAKE_BUILD_TYPE)
   set(CMAKE_BUILD_TYPE Release)
