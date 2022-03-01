@@ -6,7 +6,7 @@
 class options_parser
 {
     public:
-        void parse(options *opts);
+        bool parse(options *opts, char ***argv, int arc);
 };
 
 #endif

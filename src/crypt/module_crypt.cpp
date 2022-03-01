@@ -6,7 +6,7 @@
 
 void module_crypt::run(options *opts)
 {
-    typedef unsigned char byte;
+    //typedef unsigned char byte;
 
     options_crypt *c_opts = (options_crypt*)opts;
 
