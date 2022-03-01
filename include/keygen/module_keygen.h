@@ -5,7 +5,8 @@
 
 class module_keygen : public module
 {
-
+    public:
+        void run(options *opts);
 };
 
 #endif
